@@ -42,9 +42,9 @@ const App = () => {
       {pokemonData.map((data) => {
         return(
           <div className = "container">
-            <img alt="Pokemon you typed in" />
+            <img alt = "Pokemon you typed" src={data.sprites["front_default"]} />
             <div className = "divTable">
-             <div className = "divBody"></div>
+             <div className = "divTableBody">
                 <div className = "divTableRow">
                  <div className = "divTableCell">Type</div>
                  <div className = "divTableCell">{pokemonType}</div>
@@ -66,6 +66,7 @@ const App = () => {
             <div className = "divTableRow">
                  <div className = "divTableCell">Number of Battles</div>
                  <div className = "divTableCell">{data.game_indices.length}</div>
+            </div>
             </div>
 
             </div>
